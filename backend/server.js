@@ -8,18 +8,8 @@ connectDB();
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:3000'];
-if (process.env.FRONTEND_URL) allowedOrigins.push(process.env.FRONTEND_URL);
-
 app.use(cors({
-  origin: (origin, callback) => {
-    // Allow if no origin (like mobile apps or curl) or if in allowed list
-    if (!origin || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
