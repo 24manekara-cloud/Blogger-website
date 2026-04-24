@@ -1,0 +1,21 @@
+.post-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; height: 100%; }
+.post-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: rgba(148, 163, 184, 0.2); }
+.post-image-link { display: block; height: 200px; overflow: hidden; }
+.post-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.post-card:hover .post-image { transform: scale(1.05); }
+.post-content { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.post-category { display: inline-block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-light); margin-bottom: 0.8rem; }
+.post-title-link { text-decoration: none; color: var(--text-primary); }
+.post-title { font-size: 1.3rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.4; transition: color 0.2s; }
+.post-title:hover { color: var(--accent-light); }
+.post-excerpt { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex: 1; }
+.post-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 1.2rem; border-top: 1px solid var(--border); }
+.post-author { display: flex; align-items: center; gap: 0.8rem; }
+.author-avatar, .author-avatar-placeholder { width: 32px; height: 32px; border-radius: 50%; }
+.author-avatar-placeholder { background: var(--gradient); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; color: white; }
+.author-name { font-size: 0.9rem; font-weight: 500; color: var(--text-primary); }
+.post-stats { display: flex; gap: 1rem; color: var(--text-muted); font-size: 0.9rem; }
+.post-actions { display: flex; gap: 0.5rem; padding-top: 1rem; margin-top: 1rem; border-top: 1px dashed var(--border); }
+.btn-sm { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+.btn-danger { background: rgba(239, 68, 68, 0.1); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.2); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.btn-danger:hover { background: rgba(239, 68, 68, 0.2); }
